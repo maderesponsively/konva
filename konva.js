@@ -8,7 +8,7 @@
    * Konva JavaScript Framework v8.3.14
    * http://konvajs.org/
    * Licensed under the MIT
-   * Date: Sat Dec 17 2022
+   * Date: Sat Dec 31 2022
    *
    * Original work Copyright (C) 2011 - 2013 by Eric Rowell (KineticJS)
    * Modified work Copyright (C) 2014 - present by Anton Lavrenov (Konva)
@@ -15405,7 +15405,7 @@
               newAttrs.x += offset.x;
               newAttrs.y += offset.y;
               newAttrs.width += this.padding() * 2;
-              this._movingAnchorName = this._movingAnchorName.replace('left', 'right');
+              //this._movingAnchorName = this._movingAnchorName.replace('left', 'right');
               this._anchorDragOffset.x -= offset.x;
               this._anchorDragOffset.y -= offset.y;
               if (!allowNegativeScale) {
@@ -15420,7 +15420,7 @@
                   x: this.padding() * 2,
                   y: 0,
               });
-              this._movingAnchorName = this._movingAnchorName.replace('right', 'left');
+              //this._movingAnchorName = this._movingAnchorName.replace('right', 'left');
               this._anchorDragOffset.x -= offset.x;
               this._anchorDragOffset.y -= offset.y;
               newAttrs.width += this.padding() * 2;
@@ -15438,7 +15438,7 @@
               });
               newAttrs.x += offset.x;
               newAttrs.y += offset.y;
-              this._movingAnchorName = this._movingAnchorName.replace('top', 'bottom');
+              //this._movingAnchorName = this._movingAnchorName.replace('top', 'bottom');
               this._anchorDragOffset.x -= offset.x;
               this._anchorDragOffset.y -= offset.y;
               newAttrs.height += this.padding() * 2;
@@ -15454,7 +15454,7 @@
                   x: 0,
                   y: this.padding() * 2,
               });
-              this._movingAnchorName = this._movingAnchorName.replace('bottom', 'top');
+              //this._movingAnchorName = this._movingAnchorName.replace('bottom', 'top');
               this._anchorDragOffset.x -= offset.x;
               this._anchorDragOffset.y -= offset.y;
               newAttrs.height += this.padding() * 2;

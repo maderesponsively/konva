@@ -943,7 +943,7 @@ export class Transformer extends Group {
       newAttrs.x += offset.x;
       newAttrs.y += offset.y;
       newAttrs.width += this.padding() * 2;
-      this._movingAnchorName = this._movingAnchorName.replace('left', 'right');
+      //this._movingAnchorName = this._movingAnchorName.replace('left', 'right');
       this._anchorDragOffset.x -= offset.x;
       this._anchorDragOffset.y -= offset.y;
       if (!allowNegativeScale) {
@@ -959,7 +959,7 @@ export class Transformer extends Group {
         x: this.padding() * 2,
         y: 0,
       });
-      this._movingAnchorName = this._movingAnchorName.replace('right', 'left');
+      //this._movingAnchorName = this._movingAnchorName.replace('right', 'left');
       this._anchorDragOffset.x -= offset.x;
       this._anchorDragOffset.y -= offset.y;
       newAttrs.width += this.padding() * 2;
@@ -979,7 +979,7 @@ export class Transformer extends Group {
       });
       newAttrs.x += offset.x;
       newAttrs.y += offset.y;
-      this._movingAnchorName = this._movingAnchorName.replace('top', 'bottom');
+      //this._movingAnchorName = this._movingAnchorName.replace('top', 'bottom');
       this._anchorDragOffset.x -= offset.x;
       this._anchorDragOffset.y -= offset.y;
       newAttrs.height += this.padding() * 2;
@@ -996,7 +996,7 @@ export class Transformer extends Group {
         x: 0,
         y: this.padding() * 2,
       });
-      this._movingAnchorName = this._movingAnchorName.replace('bottom', 'top');
+      //this._movingAnchorName = this._movingAnchorName.replace('bottom', 'top');
       this._anchorDragOffset.x -= offset.x;
       this._anchorDragOffset.y -= offset.y;
       newAttrs.height += this.padding() * 2;
